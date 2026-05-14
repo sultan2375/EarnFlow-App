@@ -1,0 +1,178 @@
+export default function App() { return ( <div className="min-h-screen bg-gradient-to-br from-blue-500 to-purple-600 text-white p-4"> {/* Header */} <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-5 shadow-xl mb-5"> <div className="flex items-center justify-between"> <div> <h1 className="text-2xl font-bold">LEION EARN</h1> <p className="text-sm text-gray-200">Telegram Mini App</p> </div>
+
+<div className="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-2xl font-bold">
+        S
+      </div>
+    </div>
+  </div>
+
+  {/* Balance Cards */}
+  <div className="grid grid-cols-2 gap-4 mb-5">
+
+    <div className="bg-white text-black rounded-3xl p-4 shadow-lg">
+      <p className="text-sm text-gray-500">Total Balance</p>
+      <h2 className="text-2xl font-bold">৳ 1,250</h2>
+    </div>
+
+    <div className="bg-white text-black rounded-3xl p-4 shadow-lg">
+      <p className="text-sm text-gray-500">Pending</p>
+      <h2 className="text-2xl font-bold">৳ 300</h2>
+    </div>
+
+  </div>
+
+  {/* Referral Card */}
+  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-5 shadow-xl mb-5">
+
+    <div className="flex items-center justify-between mb-3">
+      <div>
+        <h2 className="text-xl font-bold">Referral</h2>
+        <p className="text-sm text-gray-200">Invite friends & earn</p>
+      </div>
+
+      <div className="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-bold">
+        +৳20
+      </div>
+    </div>
+
+    <div className="bg-black/20 p-3 rounded-2xl text-sm break-all mb-3">
+      https://t.me/leionearnbot/app?ref=ABC123
+    </div>
+
+    <button className="w-full bg-white text-black font-bold py-3 rounded-2xl">
+      Copy Referral Link
+    </button>
+
+  </div>
+
+  {/* Task Section */}
+  <div className="mb-5">
+    <div className="flex items-center justify-between mb-3">
+      <h2 className="text-xl font-bold">Available Tasks</h2>
+      <span className="text-sm">12 Tasks</span>
+    </div>
+
+    {/* Task Item */}
+    <div className="bg-white text-black rounded-3xl p-4 shadow-lg mb-4">
+      <div className="flex items-center justify-between mb-3">
+        <div>
+          <h3 className="font-bold text-lg">Watch Ads</h3>
+          <p className="text-gray-500 text-sm">Complete and earn instantly</p>
+        </div>
+
+        <div className="bg-green-500 text-white px-3 py-1 rounded-full font-bold">
+          ৳5
+        </div>
+      </div>
+
+      <button className="w-full bg-blue-500 text-white py-3 rounded-2xl font-bold">
+        Start Task
+      </button>
+    </div>
+
+    <div className="bg-white text-black rounded-3xl p-4 shadow-lg mb-4">
+      <div className="flex items-center justify-between mb-3">
+        <div>
+          <h3 className="font-bold text-lg">Download App</h3>
+          <p className="text-gray-500 text-sm">Install app & earn reward</p>
+        </div>
+
+        <div className="bg-green-500 text-white px-3 py-1 rounded-full font-bold">
+          ৳10
+        </div>
+      </div>
+
+      <button className="w-full bg-purple-500 text-white py-3 rounded-2xl font-bold">
+        Complete Task
+      </button>
+    </div>
+
+  </div>
+
+  {/* Withdraw Section */}
+  <div className="bg-white text-black rounded-3xl p-5 shadow-lg mb-5">
+
+    <h2 className="text-xl font-bold mb-4">Withdraw</h2>
+
+    <select className="w-full border p-3 rounded-2xl mb-3 outline-none">
+      <option>Bkash</option>
+      <option>Nagad</option>
+      <option>Rocket</option>
+      <option>Upay</option>
+    </select>
+
+    <input
+      type="text"
+      placeholder="Enter Number"
+      className="w-full border p-3 rounded-2xl mb-3 outline-none"
+    />
+
+    <input
+      type="number"
+      placeholder="Amount"
+      className="w-full border p-3 rounded-2xl mb-3 outline-none"
+    />
+
+    <button className="w-full bg-green-500 text-white py-3 rounded-2xl font-bold">
+      Request Withdraw
+    </button>
+
+  </div>
+
+  {/* History */}
+  <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-5 shadow-xl mb-24">
+
+    <h2 className="text-xl font-bold mb-4">Recent Activity</h2>
+
+    <div className="flex items-center justify-between border-b border-white/20 py-3">
+      <div>
+        <h3 className="font-semibold">Watch Ads</h3>
+        <p className="text-sm text-gray-200">Completed</p>
+      </div>
+
+      <span className="font-bold text-green-300">+৳5</span>
+    </div>
+
+    <div className="flex items-center justify-between border-b border-white/20 py-3">
+      <div>
+        <h3 className="font-semibold">Withdraw Request</h3>
+        <p className="text-sm text-gray-200">Pending</p>
+      </div>
+
+      <span className="font-bold text-yellow-300">-৳100</span>
+    </div>
+
+  </div>
+
+  {/* Bottom Navigation */}
+  <div className="fixed bottom-0 left-0 right-0 bg-black/40 backdrop-blur-lg border-t border-white/10 px-4 py-3">
+
+    <div className="flex items-center justify-around">
+
+      <button className="flex flex-col items-center text-sm">
+        <span className="text-xl">🏠</span>
+        Home
+      </button>
+
+      <button className="flex flex-col items-center text-sm">
+        <span className="text-xl">💰</span>
+        Earn
+      </button>
+
+      <button className="flex flex-col items-center text-sm">
+        <span className="text-xl">👥</span>
+        Referral
+      </button>
+
+      <button className="flex flex-col items-center text-sm">
+        <span className="text-xl">👤</span>
+        Profile
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+); }
